@@ -1,0 +1,110 @@
+B149 Playwright-9481787493
+
+--> Free and Open Source Web Application Test Automation tool by Microsoft
+
+Free--> no need to pay
+Open Source--> we can see the code, download, customise, sell it
+Web Application--> browser (chrome edge FF safari)
+Test Automation--> automatically test the app
+tool--> software ..
+
+Notepad: Desktop application
+outlook: Client - Server application
+google.com--> web application
+whatsapp--> mobile app
+
+diff playwright & selenium
+https://playwright.dev/
+
+coding languages
+JavaScript
+TypeScript
+Python
+Java
+.Net (c#)
+
+browser supported
+chromium--> Chrome Edge Opera
+firefox--> mozilla firefox
+webkit--> safari
+
+Note: playwright do not uses the browser installed in the laptop 
+it uses its own browsers
+
+1. node.js
+	cmd-->node --version
+	https://nodejs.org/en/download
+2. IDE--> VS code
+	https://code.visualstudio.com/
+
+How to install and configure playwright
+
+1. create a folder (B149_Project)
+2. open the folder, click on the addressbar and type cmd , press enter
+3. run --> npm init -y ---> package.json
+4. run --> npm init playwright@latest
+	y
+	select js
+	tests
+	false
+	true
+	final message--> Happy hacking
+5. open the VS code--> File-->open folder , select the above folder 
+6. select the check box and click 'Yes i trust...'
+7. open the package.json , change type to "module"
+
+almost all the methods of playwright are async --> we use await
+
+to use await keyword inside our own funciton, function must be declared as 'async'
+
+how to run--> node demo1.js
+code runner extension--> right click and select run code
+
+by default browser will be invisible (headless mode)
+demo1.js will just print the title 
+----------------------------------
+1. file extension will be .spec.js
+2. we import browser and test from playwright
+3. we can make the browser visible --> --headed
+
+cmd---> npx playwright test demo2.spec.js --headed
+
+
+when we use 'test' function of playwright it takes 2 arguments
+1. title of the test
+2. test script function 
+
+the playwright test automatically , open the browser, open new page(tab) and send the page object --> {page} as argument for 'test script function '
+
+{page}--> fixture
+
+
+after the execution , it automatically closed the page and the browser
+
+
+install the extension 'Playwright test for VS code'
+
+restart playwright , we get run button next to test function
+
+click run
+
+to view the browser--> open playwright.config.js---> use{ headless:false,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
