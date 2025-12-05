@@ -1,0 +1,101 @@
+Playwright
+Free and open source web application test automation tool
+Chromium--> Google chrome ,MS Edge ,Opera
+Firefox--> Mozilla Firefox
+WebKit--> Safari
+
+Language: TS JS Python Java .Net 
+
+OS: Windows Mac Linux
+
+
+
+npx playwright test tests/day02/demo1.spec.js
+
+object hierarchies
+
+playwright
+	browser
+		context
+			page
+
+
+in playwright test we can accept following fixtures
+
+1. {page}
+2. {context}
+3. {browser}
+
+
+page methods
+1. goto 
+2. goback
+3. goForward
+4. reload
+5. close
+6. setViewportSize  (resize the browser)
+
+no option minimize or maximize the browser
+
+
+can we slow down the execution of playwright test?
+yes
+launchOptions:{
+      slowMo:2000,
+    },
+
+
+Web Element --> anything present on the page
+it is created using html(hyper text markup language) code
+can we see the html code? 
+
+html
+
+tag (tag name) <html> </html>   <body> <div> <button>  <word  --> tag
+
+attribute (property)  name="value"
+
+text--> Go
+
+<button class="btn btn-lg btn-primary" name="login-button" type="submit">Go</button>
+
+
+
+<input class="form-control" id="input-username" name="username" type="text" placeholder="Username">
+
+tag: input
+attribute: class id name type placeholder 
+text: missing
+
+<h3 class="text-center m-0">Welcome to OSPOS!</h3>
+
+tag: h3
+attribute: class
+text:Welcome to OSPOS!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
